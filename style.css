@@ -1,0 +1,162 @@
+:root {
+    --color-white: rgb(233, 233, 233);
+    --color-darkBlue1: rgb(2, 19, 35);
+    --color-black1: rgb(14, 14, 14);
+    --color-black1trans: rgb(14, 14, 14, 0.75);
+    --color-silver: rgb(192, 192, 192);
+    --color-shineblue: rgb(77, 255, 255);
+    --color-lightblue: rgb(76, 162, 244);
+    --color-lightpink: rgb(248, 78, 146);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(45deg, var(--color-black1), var(--color-darkBlue1), var(--color-lightblue));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+button {
+    background-color: var(--color-white);
+    color: var(--color-darkBlue1);
+    width: 60px;
+    height: 60px;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: none;
+    margin: 2px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--color-silver);
+}
+
+/* CSS calculator */
+.mainDiv {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    top: 5.5em;
+}
+
+.calculador {
+    color: var(--color-white);
+    background-color: var(--color-black1trans);
+    margin-top: 100px;
+    width: fit-content;
+    height: fit-content;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+#result {
+    text-align: right;
+    width: auto;
+    background-color: var(--color-white);
+    color: var(--color-black1);
+    font-size: xx-large;
+    padding: 0 10px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+/* CSS header */
+#logo_CJ {
+    width: 60px;
+    margin-left: 1%;
+}
+
+.header,
+.nagivation_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 99999;
+}
+
+.header {
+    position: fixed;
+    background-color: var(--color-darkBlue1);
+    box-shadow: 1px 1px 4px var(--color-lightblue);
+    height: 5.1em;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.nagivation_header {
+    padding: 0 10%;
+    gap: 5em;
+    z-index: 999;
+}
+
+.nagivation_header a {
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--color-shineblue);
+    transition: .6s;
+}
+
+.nagivation_header :hover {
+    color: var(--color-lightpink);
+}
+
+
+@media screen and (max-width: 750px) {
+    /* .bnt_icon_header {
+        display: block;
+    }
+
+    #logo_CJ {
+        margin-right: 10%;
+    }
+
+    #menuImg {
+        margin-left: 20%;
+    }
+
+    .nagivation_header {
+        position: fixed;
+        margin-top: 0;
+        margin-left: 0;
+        flex-direction: column;
+        top: 0;
+        background-color: var(--color-darkBlue1);
+        height: 100%;
+        width: 15vw;
+        padding: 1em;
+        animation: 0.8s;
+        margin-left: -100vw;
+    } */
+}
+
+@keyframes showSideBar {
+    from {
+        margin-left: -100vw;
+    }
+
+    top {
+        margin-left: 0vw;
+    }
+}
