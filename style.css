@@ -70,6 +70,7 @@ button:hover {
 #result {
     text-align: right;
     width: auto;
+    height: 40px;
     background-color: var(--color-white);
     color: var(--color-black1);
     font-size: xx-large;
