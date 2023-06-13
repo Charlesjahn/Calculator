@@ -104,6 +104,11 @@ button:hover {
     top: 0;
     right: 0;
     left: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    color: var(--color-white);
 }
 
 .nagivation_header {
