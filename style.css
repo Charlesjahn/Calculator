@@ -69,8 +69,8 @@ button:hover {
 
 #result {
     text-align: right;
-    width: auto;
-    height: 40px;
+    width: 240px;    
+    min-height: 40px;
     background-color: var(--color-white);
     color: var(--color-black1);
     font-size: xx-large;
@@ -78,11 +78,13 @@ button:hover {
     border-radius: 2px;
     margin-bottom: 5px;
     margin-top: 5px;
+    white-space: normal;
+    word-wrap: break-word;
 }
 
 /* CSS header */
 #logo_CJ {
-    width: 60px;
+    width: 40px;
     margin-left: 1%;
 }
 
@@ -99,7 +101,7 @@ button:hover {
     background-color: var(--color-darkBlue1);
     box-shadow: 1px 1px 4px var(--color-lightblue);
     height: 5.1em;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     top: 0;
     right: 0;
